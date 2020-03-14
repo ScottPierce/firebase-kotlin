@@ -1,2 +1,26 @@
-include ':firestore', ':firebase-test'/*,':app'*/
-enableFeaturePreview('GRADLE_METADATA')
+rootProject.name = 'firestore-kotlin'
+
+enableFeaturePreview("GRADLE_METADATA")
+
+def setup = { String projectName, String path = null ->
+    final String gradlePath = ":$projectName"
+
+    include gradlePath
+
+    def project = project(gradlePath)
+
+    project.buildFileName = "${projectName}.gradle.kts"
+
+    if (path != null) {
+        project.projectDir = file("$rootDir/$path")
+    }
+
+    if (!project.buildFile.exists()) {
+        // Requiring that all modules have their proper gradle build file specified as having a
+        // slightly incorrect name on the file can be difficult to debug.
+        throw new RuntimeException("Build file is required, but not found: " +
+                "'${project.buildFile.path}'")
+    }
+}
+
+setup("firestore")

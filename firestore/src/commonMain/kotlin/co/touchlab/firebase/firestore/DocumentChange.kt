@@ -10,4 +10,3 @@ expect val DocumentChange.oldIndex_:Int
 enum class DocumentChangeType{
     ADDED, MODIFIED, REMOVED
 }
-

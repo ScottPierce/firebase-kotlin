@@ -1,23 +1,27 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'firestore'
-    spec.version                  = '1.0'
-    spec.homepage                 = 'https://github.com/touchlab/FirestoreKMP'
+    spec.version                  = 'unspecified'
+    spec.homepage                 = 'https://github.com/JetBrains/kotlin-native'
     spec.source                   = { :git => "Not Published", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
     spec.authors                  = ''
     spec.license                  = ''
-    spec.summary                  = 'Firebase Firestore'
+    spec.summary                  = 'Working with AFNetworking from Kotlin/Native using CocoaPods'
 
     spec.static_framework         = true
-    spec.vendored_frameworks      = "build/cocoapods/framework/#{spec.name}.framework"
+    spec.vendored_frameworks      = "build/cocoapods/framework/firestore.framework"
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
-    spec.dependency 'FirebaseCore', '~> 6.0.2'
-    spec.dependency 'FirebaseFirestore', '~> 1.3.2'
+    spec.dependency 'FirebaseCore', '~> 6.6'
+    spec.dependency 'FirebaseFirestore', '~> 1.11'
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',
         'KOTLIN_TARGET[sdk=iphoneos*]' => 'ios_arm',
+        'KOTLIN_TARGET[sdk=watchsimulator*]' => 'watchos_x86',
+        'KOTLIN_TARGET[sdk=watchos*]' => 'watchos_arm',
+        'KOTLIN_TARGET[sdk=appletvsimulator*]' => 'tvos_x64',
+        'KOTLIN_TARGET[sdk=appletvos*]' => 'tvos_arm64',
         'KOTLIN_TARGET[sdk=macosx*]' => 'macos_x64'
     }
 
