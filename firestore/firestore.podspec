@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'firestore'
-    spec.version                  = 'unspecified'
+    spec.version                  = '1.0.0'
     spec.homepage                 = 'https://github.com/JetBrains/kotlin-native'
     spec.source                   = { :git => "Not Published", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
     spec.authors                  = ''

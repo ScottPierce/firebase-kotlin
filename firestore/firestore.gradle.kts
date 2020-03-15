@@ -7,6 +7,8 @@ plugins {
     // id("org.jetbrains.dokka")
 }
 
+project.version = "1.0.0"
+
 android {
     compileSdkVersion(AndroidConfig.compileSdkVersion)
 
@@ -84,7 +86,6 @@ kotlin {
             languageSettings.enableLanguageFeature("InlineClasses")
         }
     }
-
 
     cocoapods {
         summary = "Working with AFNetworking from Kotlin/Native using CocoaPods"
