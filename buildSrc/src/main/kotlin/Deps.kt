@@ -41,6 +41,12 @@ class AndroidXDeps internal constructor() {
     val appcompat = "androidx.appcompat:appcompat:${Versions.androidx}"
     val annotation = "androidx.annotation:annotation:${Versions.androidx}"
     val browser = "androidx.browser:browser:1.2.0"
+    val test = AndroidXTestDeps()
+}
+
+class AndroidXTestDeps internal constructor() {
+    val core = "androidx.test:core:1.2.0"
+    val ext = "androidx.test.ext:junit:1.1.1"
 }
 
 class KotlinDeps internal constructor() {

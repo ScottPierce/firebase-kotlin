@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1086000685496:android:197209d47341661b",
         "android_client_info": {
-          "package_name": "co.touchlab.firebase.firestore"
+          "package_name": "dev.scottpierce.firebase.firestore"
         }
       },
       "oauth_client": [

@@ -7,8 +7,6 @@ plugins {
     // id("org.jetbrains.dokka")
 }
 
-project.version = "1.0.0"
-
 android {
     compileSdkVersion(AndroidConfig.compileSdkVersion)
 
@@ -61,6 +59,9 @@ kotlin {
         val androidTest by getting {
             dependencies {
                 implementation(Deps.kotlin.test.jvm)
+                implementation(Deps.androidx.appcompat)
+                implementation(Deps.androidx.test.core)
+                implementation(Deps.androidx.test.ext)
             }
         }
 
@@ -69,7 +70,9 @@ kotlin {
         val iosArm64Main by getting {
             dependsOn(iosX64Main)
         }
-        val iosArm64Test by getting
+        val iosArm64Test by getting {
+            dependsOn(iosX64Test)
+        }
 
         configure(
             listOf(

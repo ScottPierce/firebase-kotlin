@@ -23,10 +23,13 @@ buildscript {
     }
 }
 
-group = "dev.scottpierce"
-version = "1.0.0"
+group = "dev.scottpierce.firebase"
+val versionString = "0.0.1"
+version = versionString
 
 subprojects {
+    version = versionString
+
     repositories {
         maven {
             url = uri("https://artifacts.werally.in/artifactory/mobile-release/")

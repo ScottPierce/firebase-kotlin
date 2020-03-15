@@ -6,7 +6,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "co.touchlab.firebase.firestore"
+        applicationId "dev.scottpierce.firebase.firestore"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1

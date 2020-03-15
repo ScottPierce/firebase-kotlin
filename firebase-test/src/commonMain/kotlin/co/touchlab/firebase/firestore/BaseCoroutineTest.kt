@@ -1,4 +1,4 @@
-package co.touchlab.firebase.firestore
+package dev.scottpierce.firebase.firestore
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope

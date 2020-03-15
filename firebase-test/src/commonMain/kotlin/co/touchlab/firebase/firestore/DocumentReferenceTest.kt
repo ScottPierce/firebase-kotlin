@@ -1,4 +1,4 @@
-package co.touchlab.firebase.firestore
+package dev.scottpierce.firebase.firestore
 
 import co.touchlab.stately.freeze
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package co.touchlab.firebase.firestore
+package dev.scottpierce.firebase.firestore
 
 expect fun configTestFirestore()
 

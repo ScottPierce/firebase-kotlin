@@ -1,4 +1,4 @@
-package co.touchlab.firebase.firestore
+package dev.scottpierce.firebase.firestore
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
