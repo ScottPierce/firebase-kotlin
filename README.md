@@ -8,10 +8,9 @@ archive this pretty soon because it'll be a lot of support.
 
 ## Usage
 
-Use Koltin 1.3.50.
+The current version `0.0.1` relies on Kotlin 1.3.70
 
 Dependency config
-
 ```groovy
 sourceSets {
     commonMain {

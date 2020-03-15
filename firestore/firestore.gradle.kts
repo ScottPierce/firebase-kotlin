@@ -53,6 +53,7 @@ kotlin {
             dependencies {
                 implementation(Deps.kotlin.stdlib.jvm)
                 implementation(Deps.kotlinx.coroutines.jvm)
+                implementation(Deps.firebase.firestore)
             }
         }
 

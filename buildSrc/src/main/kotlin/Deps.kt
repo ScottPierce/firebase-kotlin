@@ -26,6 +26,7 @@ object Plugins {
 object Deps {
     val android = AndroidDeps()
     val androidx = AndroidXDeps()
+    val firebase = FirebaseDeps()
     val kotlin = KotlinDeps()
     val kotlinx = KotlinXDeps()
     val ktor = KtorDeps()
@@ -47,6 +48,10 @@ class AndroidXDeps internal constructor() {
 class AndroidXTestDeps internal constructor() {
     val core = "androidx.test:core:1.2.0"
     val ext = "androidx.test.ext:junit:1.1.1"
+}
+
+class FirebaseDeps internal constructor() {
+    val firestore = "com.google.firebase:firebase-firestore-ktx:21.4.1"
 }
 
 class KotlinDeps internal constructor() {
